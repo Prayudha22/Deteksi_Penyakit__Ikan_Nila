@@ -22,9 +22,9 @@ import gdown
 import os
 import tensorflow as tf
 
-MODEL_PATH = "mobilenet_tilapia_disease.h5"
+MODEL_PATH = "mobilenet_tilapia_disease.keras"
 
-FILE_ID = "178Qi75NiHPHsS3F-uN4llxNibp2Hlmyg"
+FILE_ID = "15KSWyeRQm0kfLU1VrEaWC3eQ_s9o93Uh"
 
 @st.cache_resource
 def load_model():
