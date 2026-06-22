@@ -259,18 +259,17 @@ elif menu == "Deteksi Penyakit":
 
         confidence = np.max(prediction) * 100
 
-sorted_probs = np.sort(prediction[0])[::-1]
+        sorted_probs = np.sort(prediction[0])[::-1]
 
-top1 = sorted_probs[0]
-top2 = sorted_probs[1]
+        top1 = sorted_probs[0]
+        top2 = sorted_probs[1]
 
-if confidence < 70 or (top1 - top2) < 0.15:
+        if confidence < 70 or (top1 - top2) < 0.15:
 
-    st.error(
-        "❌ Gambar tidak dikenali sebagai ikan nila atau kualitas gambar kurang baik."
-    )
+            st.error(
+            "❌ Gambar tidak dikenali sebagai ikan nila atau kualitas gambar kurang baik." )
 
-    st.stop()
+            st.stop()
 
         with col2:
 
