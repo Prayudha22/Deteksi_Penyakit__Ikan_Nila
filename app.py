@@ -33,7 +33,7 @@ def load_model():
         url = f"https://drive.google.com/uc?id={FILE_ID}"
         gdown.download(url, MODEL_PATH, quiet=False)
 
-   model = tf.keras.models.load_model(MODEL_PATH, compile=False)
+   model = tf.keras.models.load_model(MODEL_PATH)
     return model
 
 model = load_model()
