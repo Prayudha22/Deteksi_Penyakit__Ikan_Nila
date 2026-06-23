@@ -186,7 +186,7 @@ if menu == "Beranda":
 
     col4.metric(
         "Akurasi",
-        "95%"
+        "94%"
     )
 
     st.divider()
